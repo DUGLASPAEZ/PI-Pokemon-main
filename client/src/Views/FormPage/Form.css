@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.Forms {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(237, 235, 252);
+    font-family: 'Press Start 2P', sans-serif; 
+  }
+  
+  .Title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+
+  }
+  
+  .FormContainer {
+    display: flex;
+    flex-direction: column;
+    
+    padding: 20px; /* Agregamos un padding para separar el borde de los contenidos */
+  }
+  
+  .FormLabel {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  
+.FormInput,
+.FormSelect {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  /* Agregamos margen para separar el contenido del borde */
+  margin: 5px 0; /* Ajusta este valor según desees más o menos espacio */
+}
+  
+  .Error {
+    color: red;
+    font-size: 14px;
+  }
+  
+  .Buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .SubmitButton,
+  .DoneButton {
+   
+    
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .DoneButton {
+    background-color: #6c757d;
+  }
+  

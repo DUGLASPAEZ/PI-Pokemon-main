@@ -1,0 +1,7 @@
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    background-image: url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');;
+}

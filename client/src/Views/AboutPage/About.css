@@ -1,0 +1,52 @@
+.container {
+    display: flex;
+    flex-flow: wrap row;
+    gap: 1%;
+    justify-content: center;
+     background-image: url("../../images/imagenlandingpokemon.jpg");
+
+     
+     background-size: cover;
+     background-position: auto;
+     width: 100%;
+     height: 133vh;
+     position: relative;
+     top: 0;
+     left: 0;
+     right: 0;
+}
+
+.containerText {
+    margin-top: 100px;
+    box-sizing: border-box;
+    width: 45%;
+    padding: 30px;
+    color: rgb(18, 200, 200);
+   
+}
+
+.containerText a {
+    text-decoration: none;
+    color: yellow;
+    font-size: x-large;
+}
+
+.containerImg {
+    box-sizing: border-box;
+    width: 45%;
+    padding: 30px;
+    position: relative;
+}
+
+.containerImg img {
+    position: absolute;
+    top: 25%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+}
+
+.image {
+    justify-content: center;
+    width: 200px;
+    border-radius: 100px;
+}
