@@ -1,22 +1,25 @@
-import React from 'react'
-import { useSelector } from 'react-redux'
-//import Card from '../CardPage/Card'
-
+import React from 'react';
+import { useSelector } from 'react-redux';
+import { Link } from 'react-router-dom'; // Importa Link para crear enlaces de navegación
+import "../../Components/pokemonPage/Pokemon.css"
 
 function Pokemon() {
+    const pokemonList = useSelector((state) => state.PokemonName);
 
-    const pokemonName = useSelector((state)=>state.PokemonName)
-    console.log(pokemonName)
-  return (
-    <div>
-        {
-            pokemonName && pokemonName.map((e)=> (
-           // eslint-disable-next-line jsx-a11y/alt-text
-           <img src= {e.image}></img>
-            ))
-        }
-    </div>
-  )
+    return (
+        <div className='pokemoncontainer'>
+            <Link to="/home"> {/* Enlace a la página de inicio */}
+                <button className='buttonstyle'>Back to Home</button>
+            </Link>
+            {pokemonList &&
+                pokemonList.map((pokemon) => (
+                    <div key={pokemon.id}>
+                        <img  src={pokemon.image} alt={pokemon.name} />
+                        <p className='name'>{pokemon.name}</p>
+                    </div>
+                ))}
+        </div>
+    );
 }
 
-export default Pokemon
+export default Pokemon;

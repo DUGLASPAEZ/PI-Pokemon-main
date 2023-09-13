@@ -6,7 +6,7 @@ const axios = require("axios");
 const getPokemonsApi = async () => {
   try {
     // Realiza una solicitud GET a la API de Pokémon
-    const api = await axios.get("https://pokeapi.co/api/v2/pokemon/?limit=5");
+    const api = await axios.get("https://pokeapi.co/api/v2/pokemon/?limit=300");
 
     // Obtiene la lista de resultados de la API
     const pkApi = await api.data.results;

@@ -1,12 +1,16 @@
 import axios from 'axios'
 import  * as actionTypes from "./action-types"
 
-export const allPokemons=()=>{
-    return async function(dispatch){
-        const res = await axios.get('http://localhost:3001/pokemons/');
-        dispatch({type: actionTypes.ALL_POKEMONS, payload: res.data})
-    }
-}
+export const allPokemons = (page, itemsPerPage) => {
+    return async function(dispatch) {
+        try {
+            const res = await axios.get(`http://localhost:3001/pokemons/?page=${page}&itemsPerPage=${itemsPerPage}`);
+            dispatch({ type: actionTypes.ALL_POKEMONS, payload: res.data });
+        } catch (error) {
+            // Manejar errores aquí
+        }
+    };
+};
 
 export const allTypes=()=>{
 return async function (dispatch){

@@ -12,7 +12,7 @@
 .botonInicio {
     cursor: pointer;
     padding: 10px 20px;
-    background-color: #5b6672;
+    background-color: rgb(225, 132, 11);
     color: #fff;
     border: none;
     transition: background-color 0.3s ease;
@@ -34,5 +34,5 @@
     bottom: 50px;
     left: 50%;
     transform: translateX(-50%);
-    color: #888;
+    color: rgb(225, 132, 11);
   }

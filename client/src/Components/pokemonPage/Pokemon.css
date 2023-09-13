@@ -1,0 +1,47 @@
+.buttonstyle {
+    cursor: pointer;
+    border-style: double;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    border-color: rgb(225, 132, 11);
+    background: linear-gradient(-45deg, rgb(225, 132, 11), hsl(61, 100%, 63%) 100%);
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.pokemoncontainer{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(-4deg, #0f1011, hsl(85, 83%, 43%) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Press Start 2P', sans-serif; 
+    
+}
+
+.pokemoncontainer img{
+    max-width: 100%;
+    max-height: 100%;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 5px solid rgb(225, 132, 11);
+    background-color: black;
+    
+}
+

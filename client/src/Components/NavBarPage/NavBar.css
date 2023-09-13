@@ -1,5 +1,5 @@
 .nav-cont {
-    width: 100vw;
+    width: 98.6vw;
     background-color: black;
     height: 20vh;
     display: flex;
@@ -8,14 +8,14 @@
     border: 1%;
     border-style: double;
     border-color: rgb(225, 132, 11);
-
+   
 }
 .nav-img-cont img {
     width: 5.5rem;
     
 }
 .nav-link-cont {
-margin:  11rem;
+margin:  10rem;
 cursor: pointer;
 
 } 
@@ -33,4 +33,11 @@ cursor: pointer;
  .pokemonslogo img {
     width: 16rem;
     margin-right: auto;
+ }
+
+ .butonnav {
+    cursor: pointer;
+    border-style: double;
+    border-color: rgb(225, 132, 11);
+    background: linear-gradient(-45deg, rgb(225, 132, 11), hsl(61, 100%, 63%) 100%);
  }

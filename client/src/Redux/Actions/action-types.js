@@ -1,4 +1,4 @@
-
+export const SET_CURRENT_PAGE= "SET_CURRENT_PAGE";
 export const ALL_POKEMONS= 'ALL_POKEMONS'
 export const ALL_TYPES= 'ALL_TYPES'
 export const POKEMON_NAME= 'POKEMON_NAME'
