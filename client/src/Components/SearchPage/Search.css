@@ -1,0 +1,14 @@
+.searchBar{
+
+    cursor: pointer;
+
+}
+
+.searchButton{
+    cursor: pointer;
+    border-style: double;
+    border-color: rgb(225, 132, 11);
+    background: linear-gradient(-45deg, rgb(225, 132, 11), hwb(120 55% 44%) 100%);
+  
+    
+}

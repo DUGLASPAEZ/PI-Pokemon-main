@@ -28,3 +28,14 @@ border-color: rgb(225, 132, 11);
     margin: inline end 5px; ;
     text-decoration-color: darkgoldenrod;
 }
+
+
+.buttomfilters{
+   
+    cursor: pointer;
+    border-style: double;
+    border-color: rgb(225, 132, 11);
+    background: linear-gradient(-45deg, rgb(225, 132, 11), hsl(61, 100%, 63%) 100%);
+    margin-left: 5rem ;
+    
+}

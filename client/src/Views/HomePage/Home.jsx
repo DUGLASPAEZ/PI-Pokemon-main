@@ -123,19 +123,19 @@ function Home() {
         <Search />
         {/* Botones de filtrado */}
         <div className="filter-buttons">
-          <button onClick={() => applyFilter('NameAsc')}>Nombre (A-Z)</button>
-          <button onClick={() => applyFilter('NameDesc')}>Nombre (Z-A)</button>
-          <button onClick={() => applyFilter('AttackAsc')}>Ataque (Menor a Mayor)</button>
-          <button onClick={() => applyFilter('AttackDesc')}>Ataque (Mayor a Menor)</button>
-          <button onClick={() => applyFilter('OriginDb')}>Origen (DB)</button>
-          <button onClick={() => applyFilter('OriginApi')}>Origen (API)</button>
-          <button onClick={() => applyFilter('Todos')}>Todos</button>
+          <button className='buttomfilters' onClick={() => applyFilter('NameAsc')}>Nombre (A-Z)</button>
+          <button className='buttomfilters' onClick={() => applyFilter('NameDesc')}>Nombre (Z-A)</button>
+          <button className='buttomfilters' onClick={() => applyFilter('AttackAsc')}>Ataque (Menor a Mayor)</button>
+          <button className='buttomfilters' onClick={() => applyFilter('AttackDesc')}>Ataque (Mayor a Menor)</button>
+          <button className='buttomfilters' onClick={() => applyFilter('OriginDb')}>Origen (DB)</button>
+          <button className='buttomfilters' onClick={() => applyFilter('OriginApi')}>Origen (API)</button>
+          <button className='buttomfilters' onClick={() => applyFilter('Todos')}>Todos</button>
           {/* Botón para mostrar/ocultar filtro de tipo */}
-          <button onClick={() => setShowTypeFilter(!showTypeFilter)}>Tipo</button>
+          <button className='buttomfilters' onClick={() => setShowTypeFilter(!showTypeFilter)}>Tipo</button>
           {showTypeFilter && (
             <div className="type-filter">
               {availableTypes.map((type) => (
-                <button key={`Type:${type}`} onClick={() => applyFilter(`Type:${type}`)}>
+                <button className='buttomfilters'  key={`Type:${type}`} onClick={() => applyFilter(`Type:${type}`)}>
                   Tipo: {type}
                 </button>
               ))}

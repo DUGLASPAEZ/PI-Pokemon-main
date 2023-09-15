@@ -22,15 +22,15 @@ const Search=()=>{
   }
     
      // Restaurar la lista de todos los Pokémon
-     const HandleQuit=()=>{
+     
             dispatch(allPokemons())
-           }
+           
 
     return(
         <div className= "searchBar">
       <input type="search" onChange={HandleChange} value={searchValue}  className= "searchInput" /> 
       <button onClick={HandleSearch} className= "searchButton">Search</button>
-      <button onClick={HandleQuit} className= "quitButton">Quit</button>
+      
     </div>
     )
 }
